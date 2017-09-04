@@ -22,6 +22,7 @@ sudo apt install python3-gpiozero python-gpiozero -y
 
 ## Examples
 
+- [Button demo](examples/button-demo/README.md)
 - [Who's in?](examples/whos-in/README.md)
 - [London Tube line status](examples/tube/README.md)
 - [Rain in cities](examples/rain/README.md)

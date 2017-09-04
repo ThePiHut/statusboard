@@ -33,7 +33,7 @@ As well as on/off you can use PWM (pulse-width modulation) to control the
 brightness of the LEDs:
 
 ```python
-from gpiozero import StatusZero
+from gpiozero import StatusBoard
 from time import sleep
 
 sb = StatusBoard(pwm=True)
@@ -42,13 +42,13 @@ sb.on()  # all leds on
 sleep(1)
 sb.off()  # all leds off
 sleep(1)
-sb.one.green.value = 0.5  # green led of first strip at half brightness
+sb.one.lights.green.value = 0.5  # green led of first strip at half brightness
 sleep(1)
 sb.two.value = (0.5, 0.5)  # both leds of second strip at half brightness
 sleep(1)
-sb.one.pulse()  # both leds of first strip fading in and out
+sb.one.lights.pulse()  # both leds of first strip fading in and out
 sleep(1)
-sb.two.pulse()  # both leds of second strip pulsing in opposite timing with the first
+sb.two.lights.pulse()  # both leds of second strip pulsing in opposite timing with the first
 ```
 
 ## Naming strips
@@ -69,7 +69,7 @@ sb.off()  # all leds off
 sleep(1)
 sb.a.on()  # both leds of first strip on
 sleep(1)
-sb.d.green.on()  # green led of fourth strip on
+sb.d.lights.green.on()  # green led of fourth strip on
 sleep(1)
 ```
 

@@ -1,7 +1,10 @@
-# GPIO Zero code for the STATUS Board and STATUS Zero
+# GPIO Zero tutorial and examples for the STATUS Board and STATUS Zero
 
 STATUS Board comprises five strips, each containing a button and a pair of LEDS
 (red and green).
+
+STATUS Zero comprises three strips, each containing a pair of LEDS (red and
+green).
 
 ## Install the software
 

@@ -55,18 +55,18 @@ will be named `one` to `three`. Optionally, you can instead name up to three
 strips like so:
 
 ```python
-from gpiozero import StatusBoard
+from gpiozero import StatusZero
 from time import sleep
 
-sb = StatusBoard('a', 'b')  # only using two strips
+sz = StatusZero('a', 'b')  # only using two strips
 
-sb.on()  # all leds on
+sz.on()  # all leds on
 sleep(1)
-sb.off()  # all leds off
+sz.off()  # all leds off
 sleep(1)
-sb.a.on()  # both leds of first strip on
+sz.a.on()  # both leds of first strip on
 sleep(1)
-sb.b.green.on()  # green led of second strip
+sz.b.green.on()  # green led of second strip
 sleep(1)
 ```
 
@@ -74,17 +74,17 @@ So if the strips represent different people, you might name the strips for each
 person:
 
 ```python
-sb = StatusBoard('mum', 'dad', 'alice')
+sz = StatusZero('mum', 'dad', 'alice')
 ```
 
 Or if they're monitoring whether it's raining in different cities:
 
 ```python
-sb = StatusBoard('sheffield', 'nottingham', 'cambridge')
+sz = StatusZero('sheffield', 'nottingham', 'cambridge')
 ```
 
-You can name up to five strips. Any without names are not used (except when none
-are named).
+You can name up to three strips. Any without names are not used (except when
+none are named).
 
 ## Continue
 

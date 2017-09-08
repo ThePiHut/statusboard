@@ -3,9 +3,13 @@
 [STATUS Zero](https://thepihut.com/collections/status-boards/products/status-board-zero)
 comprises three strips, each containing a pair of LEDS (red and green).
 
+![STATUS Zero](images/status-zero.jpg)
+
 [STATUS Board](https://thepihut.com/collections/status-boards/products/status-board-pro)
 comprises five strips, each containing a button and a pair of LEDS (red and
 green).
+
+![STATUS Board](images/status-board.jpg)
 
 ## Install the software
 

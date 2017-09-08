@@ -1,9 +1,10 @@
 # GPIO Zero tutorial and examples for the STATUS Board and STATUS Zero
 
-STATUS Board comprises five strips, each containing a button and a pair of LEDS
-(red and green).
+[STATUS Zero](https://thepihut.com/collections/status-boards/products/status-board-zero)
+comprises three strips, each containing a pair of LEDS (red and green).
 
-STATUS Zero comprises three strips, each containing a pair of LEDS (red and
+[STATUS Board](https://thepihut.com/collections/status-boards/products/status-board-pro)
+comprises five strips, each containing a button and a pair of LEDS (red and
 green).
 
 ## Install the software

@@ -1,10 +1,10 @@
 # STATUS examples
 
-- [Button demo](examples/button-demo/README.md)
-- [Who's in?](examples/whos-in/README.md)
-- [London Tube line status](examples/tube/README.md)
-- [Rain in cities](examples/rain/README.md)
-- [Websites up or down](examples/website-monitor/README.md)
-- [Travis build status](examples/travis-build/README.md)
-- [In the news](examples/news/README.md)
-- [Multi-room motion sensor](examples/multi-room-motion/README.md)
+- [Button demo](button-demo/README.md)
+- [Who's in?](whos-in/README.md)
+- [London Tube line status](tube/README.md)
+- [Rain in cities](rain/README.md)
+- [Websites up or down](website-monitor/README.md)
+- [Travis build status](travis-build/README.md)
+- [In the news](news/README.md)
+- [Multi-room motion sensor](multi-room-motion/README.md)

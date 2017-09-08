@@ -1,4 +1,4 @@
-from gpiozero import StatusZero
+from gpiozero import StatusBoard
 from gpiozero.tools import negated
 import json
 import requests
@@ -16,28 +16,28 @@ def is_raining(city, country):
     j = requests.get(url).json()
     return 'rain' in j['list'][2]
 
-sz = StatusZero('dundee', 'cambridge', 'sheffield')
+sb = StatusBoard('cambridge', 'sheffield', 'nottingham')
 
 while True:
-    if is_raining('Dundee', 'GB'):
-        sz.dundee.red.on()
-        sz.dundee.green.off()
-    else:
-        sz.dundee.green.on()
-        sz.dundee.red.off()
-
     if is_raining('Cambridge', 'GB'):
-        sz.cambridge.red.on()
-        sz.cambridge.green.off()
+        sb.cambridge.lights.red.on()
+        sb.cambridge.lights.green.off()
     else:
-        sz.cambridge.green.on()
-        sz.cambridge.red.off()
+        sb.cambridge.lights.green.on()
+        sb.cambridge.lights.red.off()
 
     if is_raining('Sheffield', 'GB'):
-        sz.sheffield.red.on()
-        sz.sheffield.green.off()
+        sb.sheffield.lights.red.on()
+        sb.sheffield.lights.green.off()
     else:
-        sz.sheffield.green.on()
-        sz.sheffield.red.off()
+        sb.sheffield.lights.green.on()
+        sb.sheffield.lights.red.off()
+
+    if is_raining('nottingham', 'GB'):
+        sb.nottingham.lights.red.on()
+        sb.nottingham.lights.green.off()
+    else:
+        sb.nottingham.lights.green.on()
+        sb.nottingham.lights.red.off()
 
     sleep(60*60)  # check every hour

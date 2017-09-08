@@ -9,5 +9,9 @@ phone will need a reserved IP address on the network.
 
 ## Code
 
-- [Simple example](whos_home_simple.py)
-- [Advanced example](whos_home_advanced.py)
+- STATUS Zero
+    - [Simple version](sz_whos_home_simple.py)
+    - [Advanced version](sz_whos_home_advanced.py)
+- STATUS Board
+    - [Simple version](sb_whos_home_simple.py)
+    - [Advanced version](sb_whos_home_advanced.py)

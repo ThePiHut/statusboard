@@ -16,5 +16,9 @@ You'll need to set up the repositories on [Travis CI](https://travis-ci.org/).
 
 ## Code
 
-- [Simple example](travis_simple.py)
-- [Advanced example](travis_advanced.py)
+- STATUS Zero
+    - [Simple example](sz_travis_simple.py)
+    - [Advanced example](sz_travis_advanced.py)
+- STATUS Board
+    - [Simple example](sb_travis_simple.py)
+    - [Advanced example](sb_travis_advanced.py)

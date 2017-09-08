@@ -1,23 +1,20 @@
 from tubestatus import Status
-from gpiozero import StatusZero
+from gpiozero import StatusBoard
 from time import sleep
 
 tube = Status()
 lines = ['Central', 'Northern', 'Piccadilly']
 
-sz = StatusZero()
+sz = StatusBoard()
 
 while True:
-    for i, line in enumerate(lines):
-        strip = sz[i]
+    for strip, line in zip(sz, lines):
         status = tube.get_status(line)
-        action = {
+        {
             'Good Service': strip.green.on,
             'Minor Delays': strip.green.blink,
             'Severe Delays': strip.red.on,
             'Part Closure': strip.red.blink,
             'Service Closed': strip.off,
-        }[status.description]
-        strip.off()
-        action()
-    sleep(60)
+        }[status.description]()
+    sleep(60)  # check every minute

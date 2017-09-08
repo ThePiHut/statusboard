@@ -18,8 +18,12 @@ Just edit the names of cities to the ones you want to monitor.
 
 ## Code
 
-- [Simple version](rain_simple.py)
-- [Advanced version](rain_advanced.py)
+- STATUS Zero
+    - [Simple version](sz_rain_simple.py)
+    - [Advanced version](sz_rain_advanced.py)
+- STATUS Board
+    - [Simple version](sb_rain_simple.py)
+    - [Advanced version](sb_rain_advanced.py)
 
 ## More
 

@@ -8,5 +8,9 @@ You'll need the Pi to be connected to the internet.
 
 ## Code
 
-- [Simple example](website_simple.py)
-- [Advanced example](website_advanced.py)
+- STATUS Zero
+    - [Simple version](sz_website_simple.py)
+    - [Advanced version](sz_website_advanced.py)
+- STATUS Board
+    - [Simple version](sb_website_simple.py)
+    - [Advanced version](sb_website_advanced.py)

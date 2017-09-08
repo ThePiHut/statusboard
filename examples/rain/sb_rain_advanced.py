@@ -1,4 +1,4 @@
-from gpiozero import StatusZero
+from gpiozero import StatusBoard
 from gpiozero.tools import negated
 import json
 import requests
@@ -17,17 +17,13 @@ def is_raining(city, country):
         j = requests.get(url).json()
         yield 'rain' in j['list'][2]
 
-sz = StatusZero('dundee', 'cambridge', 'sheffield')
+sb = StatusBoard()
 
-statuses = {
-    sz.peterborough: is_raining('Dundee', 'GB'),
-    sz.cambridge: is_raining('Cambridge', 'GB'),
-    sz.sheffield: is_raining('Sheffield', 'GB'),
-}
+my_cities = ['cambridge', 'sheffield', 'nottingham']
 
-for strip, rain in statuses.items():
-    strip.red.source = rain
-    strip.red.source_delay = 60*60
-    strip.green.source = negated(strip.red.values)
+for strip, city in zip(sb, my_cities):
+    strip.lights.red.source = is_raining(city, 'GB')
+    strip.lights.red.source_delay = 60*60  # check every hour
+    strip.lights.green.source = negated(strip.lights.red.values)
 
 pause()

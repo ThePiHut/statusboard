@@ -11,5 +11,9 @@ Choose the names or terms you want to monitor.
 
 ## Code
 
-- [Simple example](news_simple.py)
-- [Advanced example](news_advanced.py)
+- STATUS Zero
+    - [Simple example](sz_news_simple.py)
+    - [Advanced example](sz_news_advanced.py)
+- STATUS Board
+    - [Simple example](sb_news_simple.py)
+    - [Advanced example](sb_news_advanced.py)

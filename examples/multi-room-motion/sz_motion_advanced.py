@@ -9,7 +9,7 @@ remotes = [PiGPIOFactory(host=ip) for ip in ips]
 sz = StatusZero()  # on this pi
 sensors = [MotionSensor(17, pin_factory=r) for r in remotes]  # remote sensors
 
-for strip, sensor in zip(leds, sensors):
+for strip, sensor in zip(sz, sensors):
     strip.green.source = sensor.values
     strip.green.source_delay = 5  # check every 5 seconds
 	strip.red.source = negated(strip.green.values)

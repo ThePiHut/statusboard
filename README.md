@@ -8,7 +8,7 @@ green).
 
 ## Install the software
 
-To use the STATUS Board, you'll need the latest version of GPIO Zero (v1.4 or
+To use the STATUS boards, you'll need the latest version of GPIO Zero (v1.4 or
 above). Simply install or upgrade with:
 
 ```bash
@@ -30,3 +30,8 @@ sudo apt install python3-gpiozero python-gpiozero -y
 - [Travis build status](examples/travis-build/README.md)
 - [In the news](examples/news/README.md)
 - [Multi-room motion sensor](examples/multi-room-motion/README.md)
+
+## API documentation
+
+- [Status Zero](http://gpiozero.readthedocs.io/en/stable/api_boards.html#statuszero)
+- [Status Board](http://gpiozero.readthedocs.io/en/stable/api_boards.html#statusboard)

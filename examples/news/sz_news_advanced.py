@@ -11,12 +11,11 @@ def in_the_news(text):
 
 sz = StatusZero()
 
-people = ['Donald Trump', 'Kim Jong-Un', 'Theresa May', 'Boris Johnson']
+people = ['Donald Trump', 'Kim Jong-Un', 'Theresa May']
 
-for i, person in enumerate(people):
-    strip = sz[i]
+for strip, person in zip(sz, people):
     strip.red.source = in_the_news(person)
-    strip.red.source_delay = 60
+    strip.red.source_delay = 60  # check every hour
     strip.green.source = negated(strip.red.values)
 
 pause()

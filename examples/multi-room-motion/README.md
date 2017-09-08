@@ -17,5 +17,9 @@ documentation for more information.
 
 You will need to run the Python code on the Pi with the Status Zero attached.
 
-- [Simple version](motion_simple.py)
-- [Advanced version](motion_advanced.py)
+- STATUS Zero
+    - [Simple version](sz_motion_simple.py)
+    - [Advanced version](sz_motion_advanced.py)
+- STATUS Board
+    - [Simple version](sb_motion_simple.py)
+    - [Advanced version](sb_motion_advanced.py)

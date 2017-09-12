@@ -10,21 +10,21 @@ alice = PingServer('192.168.1.5')
 while True:
     if mum.is_active:
         sb.mum.lights.green.on()
-        sb.mum.lights.red.on()
+        sb.mum.lights.red.off()
     else:
         sb.mum.lights.red.on()
         sb.mum.lights.green.off()
 
     if dad.is_active:
         sb.dad.lights.green.on()
-        sb.dad.lights.red.on()
+        sb.dad.lights.red.off()
     else:
         sb.dad.lights.red.on()
         sb.dad.lights.green.off()
 
     if alice.is_active:
         sb.alice.lights.green.on()
-        sb.alice.lights.red.on()
+        sb.alice.lights.red.off()
     else:
         sb.alice.lights.red.on()
         sb.alice.lights.green.off()

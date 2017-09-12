@@ -14,25 +14,25 @@ sz = StatusZero('raspberrypi', 'codeclub', 'coderdojo')
 while True:
     if website_up('https://www.google.com/'):
         if website_up('https://www.raspberrypi.org/'):
+            sz.raspberrypi.green.on()
+            sz.raspberrypi.red.off()
+        else:
             sz.raspberrypi.red.on()
             sz.raspberrypi.green.off()
-        else:
-            sz.raspberrypi.green.on()
-            sz.raspberrypi.red.on()
 
         if website_up('https://www.codeclub.org.uk/'):
+            sz.codeclub.green.on()
+            sz.codeclub.red.off()
+        else:
             sz.codeclub.red.on()
             sz.codeclub.green.off()
-        else:
-            sz.codeclub.green.on()
-            sz.codeclub.red.on()
 
         if website_up('https://www.coderdojo.com/'):
-            sz.coderdojo.red.on()
-            sz.coderdojo.green.off()
-        else:
             sz.coderdojo.green.on()
             sz.coderdojo.red.on()
+        else:
+            sz.coderdojo.red.on()
+            sz.coderdojo.green.off()
     else:
         sz.blink()  # internet down, blink everything
 

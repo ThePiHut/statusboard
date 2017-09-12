@@ -15,20 +15,20 @@ while True:
         sz.trump.green.off()
     else:
         sz.trump.green.on()
-        sz.trump.red.on()
+        sz.trump.red.off()
 
     if in_the_news('Kim Jong-Un'):
         sz.kim.red.on()
         sz.kim.green.off()
     else:
         sz.kim.green.on()
-        sz.kim.red.on()
+        sz.kim.red.off()
 
     if in_the_news('Theresa May'):
         sz.may.red.on()
         sz.may.green.off()
     else:
         sz.may.green.on()
-        sz.may.red.on()
+        sz.may.red.off()
 
     sleep(60*60)  # check every hour

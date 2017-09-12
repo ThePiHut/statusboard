@@ -12,14 +12,14 @@ sb = StatusBoard('gpiozero', 'documentation')
 while True:
     if build_passed('RPi-Distro/python-gpiozero'):
         sb.gpiozero.lights.green.on()
-        sb.gpiozero.lights.red.on()
+        sb.gpiozero.lights.red.off()
     else:
         sb.gpiozero.lights.red.on()
         sb.gpiozero.lights.green.off()
 
     if build_passed('raspberrypi/documentation'):
         sb.documentation.lights.green.on()
-        sb.documentation.lights.red.on()
+        sb.documentation.lights.red.off()
     else:
         sb.documentation.lights.red.on()
         sb.documentation.lights.green.off()

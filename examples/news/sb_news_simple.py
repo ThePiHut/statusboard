@@ -15,20 +15,20 @@ while True:
         sb.trump.lights.green.off()
     else:
         sb.trump.lights.green.on()
-        sb.trump.lights.red.on()
+        sb.trump.lights.red.off()
 
     if in_the_news('Kim Jong-Un'):
         sb.kim.lights.red.on()
         sb.kim.lights.green.off()
     else:
         sb.kim.lights.green.on()
-        sb.kim.lights.red.on()
+        sb.kim.lights.red.off()
 
     if in_the_news('Theresa May'):
         sb.may.lights.red.on()
         sb.may.lights.green.off()
     else:
         sb.may.lights.green.on()
-        sb.may.lights.red.on()
+        sb.may.lights.red.off()
 
     sleep(60*60)  # check every hour

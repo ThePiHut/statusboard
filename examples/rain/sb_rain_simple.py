@@ -33,7 +33,7 @@ while True:
         sb.sheffield.lights.green.on()
         sb.sheffield.lights.red.off()
 
-    if is_raining('nottingham', 'GB'):
+    if is_raining('Nottingham', 'GB'):
         sb.nottingham.lights.red.on()
         sb.nottingham.lights.green.off()
     else:

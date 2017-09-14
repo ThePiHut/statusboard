@@ -1,5 +1,4 @@
 from gpiozero import StatusBoard
-from gpiozero.tools import negated
 import json
 import requests
 from time import sleep

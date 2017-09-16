@@ -8,3 +8,4 @@
 - [Travis build status](travis-build/README.md)
 - [In the news](news/README.md)
 - [Multi-room motion sensor](multi-room-motion/README.md)
+- [Speedtest monitor](speedtest/README.md)

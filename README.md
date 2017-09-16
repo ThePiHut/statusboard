@@ -35,6 +35,7 @@ sudo apt install python3-gpiozero python-gpiozero -y
 - [Travis build status](examples/travis-build/README.md)
 - [In the news](examples/news/README.md)
 - [Multi-room motion sensor](examples/multi-room-motion/README.md)
+- [Speedtest monitor](examples/speedtest/README.md)
 
 ## API documentation
 

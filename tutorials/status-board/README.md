@@ -22,9 +22,9 @@ sb.off()  # all leds off
 sleep(1)
 sb.one.on()  # both leds of first strip on
 sleep(1)
-sb.two.green.on()  # green led of second strip on
+sb.two.lights.green.on()  # green led of second strip on
 sleep(1)
-sb.two.red.blink()  # blink red led of second strip
+sb.two.lights.red.blink()  # blink red led of second strip
 ```
 
 ### PWM (variable brightness)

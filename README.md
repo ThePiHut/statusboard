@@ -14,9 +14,10 @@ green).
 ## Install the software
 
 To use the STATUS boards, you'll need the latest version of GPIO Zero (v1.4 or
-above). Simply install or upgrade with:
+above). Simply update your package list and install or upgrade GPIO Zero with:
 
 ```bash
+sudo apt update
 sudo apt install python3-gpiozero python-gpiozero -y
 ```
 

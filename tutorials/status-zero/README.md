@@ -179,8 +179,7 @@ LED strip's value is a 2-tuple, e.g. `(True, True)` when they're both on. `0`
 and `1` work as values too.
 
 ```python
-from gpiozero import PingServer
-from status import StatusZero
+from gpiozero import PingServer, StatusZero
 from time import sleep
 
 router = PingServer('192.168.1.1')
@@ -208,8 +207,7 @@ Rather than use a while loop to continuously set a device's value, you can use a
 more advanced approach, connecting an LED with a stream of values.
 
 ```python
-from gpiozero import PingServer
-from status import StatusZero
+from gpiozero import PingServer, StatusZero
 from signal import pause
 
 sz = StatusZero('router', 'google')
@@ -238,8 +236,7 @@ indicator, a dictionary is formed mapping each ping server to a status strip and
 the LED behaviour setup is in a loop.
 
 ```python
-from gpiozero import PingServer
-from status import StatusZero
+from gpiozero import PingServer, StatusZero
 from signal import pause
 
 sz = StatusZero('router', 'google')

@@ -203,8 +203,7 @@ LED strip's value is a 2-tuple, e.g. `(True, True)` when they're both on. `0`
 and `1` work as values too.
 
 ```python
-from gpiozero import PingServer
-from status import StatusBoard
+from gpiozero import PingServer, StatusBoard
 from time import sleep
 
 router = PingServer('192.168.1.1')
@@ -232,8 +231,7 @@ Rather than use a while loop to continuously set a device's value, you can use a
 more advanced approach, connecting an LED with a stream of values.
 
 ```python
-from gpiozero import PingServer
-from status import StatusBoard
+from gpiozero import PingServer, StatusBoard
 from signal import pause
 
 sb = StatusBoard('router', 'google')
@@ -262,8 +260,7 @@ indicator, a dictionary is formed mapping each ping server to a status strip and
 the LED behaviour setup is in a loop.
 
 ```python
-from gpiozero import PingServer
-from status import StatusBoard
+from gpiozero import PingServer, StatusBoard
 from signal import pause
 
 sb = StatusBoard('router', 'google')
@@ -369,8 +366,7 @@ pause()
 One use of the buttons could be to prompt the status lights to update:
 
 ```python
-from gpiozero import PingServer
-from status import StatusBoard
+from gpiozero import PingServer, StatusBoard
 from signal import pause
 
 sb = StatusBoard('google')
@@ -393,8 +389,7 @@ pause()
 And to have it auto-update every minute, but also when pressed:
 
 ```python
-from gpiozero import PingServer
-from status import StatusBoard
+from gpiozero import PingServer, StatusBoard
 from time import sleep
 
 sb = StatusBoard('google')
@@ -418,8 +413,7 @@ while True:
 or using the source/values approach:
 
 ```python
-from gpiozero import PingServer
-from status import StatusBoard
+from gpiozero import PingServer, StatusBoard
 from signal import pause
 
 sb = StatusBoard('google')

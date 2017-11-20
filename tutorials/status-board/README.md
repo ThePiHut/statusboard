@@ -22,9 +22,9 @@ sb.off()  # all leds off
 sleep(1)
 sb.one.on()  # both leds of first strip on
 sleep(1)
-sb.two.green.on()  # green led of second strip on
+sb.two.lights.green.on()  # green led of second strip on
 sleep(1)
-sb.two.red.blink()  # blink red led of second strip
+sb.two.lights.red.blink()  # blink red led of second strip
 ```
 
 ### PWM (variable brightness)
@@ -44,7 +44,7 @@ sb.off()  # all leds off
 sleep(1)
 sb.one.lights.green.value = 0.5  # green led of first strip at half brightness
 sleep(1)
-sb.two.value = (0.5, 0.5)  # both leds of second strip at half brightness
+sb.two.lights.value = (0.5, 0.5)  # both leds of second strip at half brightness
 sleep(1)
 sb.one.lights.pulse()  # both leds of first strip fading in and out
 sleep(1)

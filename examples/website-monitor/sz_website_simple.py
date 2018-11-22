@@ -29,7 +29,7 @@ while True:
 
         if website_up('https://www.coderdojo.com/'):
             sz.coderdojo.green.on()
-            sz.coderdojo.red.on()
+            sz.coderdojo.red.off()
         else:
             sz.coderdojo.red.on()
             sz.coderdojo.green.off()

@@ -9,7 +9,6 @@ def website_up(url):
     while True:
         try:
             r = requests.get(url)
-            print(url, r.ok)
             yield r.ok
         except:
             yield False
@@ -26,8 +25,10 @@ for strip, website in statuses.items():
     strip.lights.red.source = negated(strip.lights.green.values)
     strip.lights.red.source_delay = 60
 
-while True:
-    if not website_up('https://www.google.com/'):
+google = website_up('https://www.google.com/')
+
+for google_up in google:
+    if not google_up:
         for strip in sb:
             strip.lights.blink()
     sleep(60)

@@ -208,6 +208,7 @@ more advanced approach, connecting an LED with a stream of values.
 
 ```python
 from gpiozero import PingServer, StatusZero
+from gpiozero.tools import negated
 from signal import pause
 
 sz = StatusZero('router', 'google')

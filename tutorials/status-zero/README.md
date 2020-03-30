@@ -238,6 +238,7 @@ the LED behaviour setup is in a loop.
 
 ```python
 from gpiozero import PingServer, StatusZero
+from gpiozero.tools import negated
 from signal import pause
 
 sz = StatusZero('router', 'google')
@@ -247,7 +248,7 @@ statuses = {
     sz.google: PingServer('google.com'),
 }
 
-for server, strip in statuses.items():
+for strip, server in statuses.items():
     strip.green.source = server.values
     strip.green.source_delay = 60
     strip.red.source = negated(strip.green.values)

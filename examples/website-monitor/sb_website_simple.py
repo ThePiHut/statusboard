@@ -34,7 +34,7 @@ while True:
             sb.coderdojo.lights.red.on()
             sb.coderdojo.lights.green.off()
     else:
-        for strip in sz:
+        for strip in sb:
             strip.lights.blink()  # internet down, blink everything
 
     sleep(60*60)  # check every hour

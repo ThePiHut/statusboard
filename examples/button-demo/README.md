@@ -2,7 +2,7 @@
 
 A demo for each button on the STATUS Board to toggle its strip's lights.
 
-## Reqirements
+## Requirements
 
 None - but you'll need a STATUS Board (not STATUS Zero) as this example requires
 buttons.
